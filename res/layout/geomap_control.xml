@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/geomap_control_lay0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_toolbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <AutoCompleteTextView
+            android:id="@+id/search_city_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="textPostalAddress"
+            android:textColor="#000" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/btn_close_search_toolbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_action_cancel" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/geomap_control_lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10px" >
+
+        <LinearLayout
+            android:id="@+id/geomap_control_lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_geomap_open_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_paste" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_geomap_open_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_settings" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_geomap_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_signout" >
+            </ImageButton>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
